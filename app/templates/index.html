@@ -11,6 +11,12 @@
 
 <body>
 
+    <ul>
+        {%for movie in popular_movies%}
+        <li>{{movie.title}}</li>
+        {%endfor%}
+    </ul>
+
 </body>
 
 </html>
