@@ -9,22 +9,18 @@
     {% endif %}
 </head>
 
+{% import 'macros.html' as macro%}
+
 <body>
 
     <ul>
-        {%for movie in popular_movies%}
-        <li>{{movie.title}}</li>
-        {%endfor%}
+        {{macro.displayMovieList(popular_movies)}}
     </ul>
     <ul>
-        {%for movie in upcoming_movies%}
-        <li>{{movie.title}}</li>
-        {%endfor%}
+        {{macro.displayMovieList(upcoming_movies)}}
     </ul>
     <ul>
-        {%for movie in now_showing_movies%}
-        <li>{{movie.title}}</li>
-        {%endfor%}
+        {{macro.displayMovieList(now_showing_movies)}}
     </ul>
 
 </body>
