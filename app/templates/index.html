@@ -16,6 +16,16 @@
         <li>{{movie.title}}</li>
         {%endfor%}
     </ul>
+    <ul>
+        {%for movie in upcoming_movies%}
+        <li>{{movie.title}}</li>
+        {%endfor%}
+    </ul>
+    <ul>
+        {%for movie in now_showing_movies%}
+        <li>{{movie.title}}</li>
+        {%endfor%}
+    </ul>
 
 </body>
 
